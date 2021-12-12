@@ -1,0 +1,33 @@
+﻿<Window x:Class="Spy.StartWimdows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spy"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="300" Width="550">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <GroupBox Header="Строк">
+                <TextBox Name="txtRow" Width="75" Height="50"/>
+            </GroupBox>
+            <GroupBox Header="Столбцов">
+                <TextBox Name="txtColumn" Width="75" Height="50"/>
+            </GroupBox>
+            <GroupBox Header="Время от">
+                <TextBox Name="txttOt" Width="75" Height="50"/>
+            </GroupBox>
+            <GroupBox Header="Время до">
+                <TextBox Name="txtDo" Width="75" Height="50"/>
+            </GroupBox>
+            <DatePicker Name="DateSearch" Height="50"/>
+            <Button Width="75" Height="50" x:Name="OpenTeplo" Click="OpenTeplo_Click" Content="Применить"></Button>
+            <!--<GroupBox Header="Выберите время от">
+                <ComboBox x:Name="FilterOt" SelectionChanged="Filter"/>
+            </GroupBox>
+            <GroupBox Header="Выберите время до">
+                <ComboBox  x:Name="FilterDo" SelectionChanged="Filter"/>
+            </GroupBox>-->
+        </StackPanel>
+    </Grid>
+</Window>
