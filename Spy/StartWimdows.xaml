@@ -8,19 +8,19 @@
         Title="StartWindow" Height="300" Width="550">
     <Grid>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <GroupBox Header="Строк">
-                <TextBox Name="txtRow" Width="75" Height="50"/>
+            <GroupBox Width="75" Height="50" Header="Строки">
+                <TextBox Name="txtRow" />
             </GroupBox>
-            <GroupBox Header="Столбцов">
-                <TextBox Name="txtColumn" Width="75" Height="50"/>
+            <GroupBox Header="Столбцов" Width="75" Height="50">
+                <TextBox Name="txtColumn" />
             </GroupBox>
-            <GroupBox Header="Время от">
-                <TextBox Name="txttOt" Width="75" Height="50"/>
+            <GroupBox Header="Время от" Width="75" Height="50">
+                <TextBox Name="txttOt" />
             </GroupBox>
-            <GroupBox Header="Время до">
-                <TextBox Name="txtDo" Width="75" Height="50"/>
+            <GroupBox Header="Время до" Width="75" Height="50">
+                <TextBox Name="txtDo" />
             </GroupBox>
-            <DatePicker Name="DateSearch" Height="50"/>
+            <DatePicker Width="125"  Name="DateSearch" Height="50"/>
             <Button Width="75" Height="50" x:Name="OpenTeplo" Click="OpenTeplo_Click" Content="Применить"></Button>
             <!--<GroupBox Header="Выберите время от">
                 <ComboBox x:Name="FilterOt" SelectionChanged="Filter"/>
